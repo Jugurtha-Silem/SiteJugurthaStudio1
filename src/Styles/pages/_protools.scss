@@ -1,0 +1,12 @@
+.container-ptotools {
+    background: red;
+    
+    .container-video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 50px;
+        
+    }
+}

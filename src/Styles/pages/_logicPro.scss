@@ -1,0 +1,60 @@
+.container {
+    padding: 0;
+    margin: 0;
+    background: pink;
+    width: 100%;
+    height: 100vh;
+    @include center;
+    flex-direction: column;
+
+    .navigation {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 20%;
+    }
+
+    .wrapper {
+        background: pink;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        .cours-video {
+            @include center;
+            flex-direction: column;
+            background: rgb(230, 230, 255);
+            height: 500px;
+            width: 70%;
+            overflow-y: auto;
+
+            .video1 {
+                position: relative;
+                background: red;
+                height: 1000px;
+                width: 200px;
+            }
+
+            .video2 {
+                background: rgb(129, 99, 99);
+                height: 200px;
+                width: 600px;
+            }
+            .video3{
+                background: rgb(251, 0, 255);
+                height: 2000px;
+                width: 500px;
+            }
+        }
+        
+        .right-card {
+            @include center;
+            background: rgb(161, 20, 72);
+            height: 100%;
+            width: 30%;
+        }
+    }
+}
